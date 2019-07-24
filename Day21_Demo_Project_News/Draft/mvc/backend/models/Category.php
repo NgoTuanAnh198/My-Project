@@ -60,7 +60,7 @@ class Category extends Model
         $queryUpdate = "UPDATE categories SET  `name` = '{$categories['name']}',
                                                    `description`= '{$categories['description']}',
                                                      `avatar` =  '{$categories['avatar']}',
-                                                     `status` =  '{$categories['status']}',
+                                                     `status` =  '{$categories['status']}'
                                                 WHERE id = {$categories['id']}";
         $isUpdate = mysqli_query($connection, $queryUpdate);
         // đóng kết nối
