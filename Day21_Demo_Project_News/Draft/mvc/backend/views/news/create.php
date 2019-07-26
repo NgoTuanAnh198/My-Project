@@ -3,10 +3,7 @@
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1>
-            Dashboard
-            <small>Control panel</small>
-        </h1>
+        <h2>Tạo mới bản ghi</h2>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
             <li class="active">Dashboard</li>
@@ -26,33 +23,62 @@
         <?php endif; ?>
 
         <!--    form create-->
-        <h2>Tạo mới bản ghi</h2>
         <form method="post" action="">
             <div class="form-group">
                 <label>title</label>
-                <input type="text" class="form-control" name="title" value=""/>
+                <input type="text" class="form-control" name="title" value="<?php echo isset($_POST['title'])? $_POST['title']:''?>"/>
+            </div>
+            <div class="form-group">
+                <label>Category</label>
+                <select class="form-control" name="category_id">
+                    <?php if (!empty($categories)): ?>
+                        <?php foreach ($categories as $category): ?>
+                            <option value="<?php echo $category['id'] ?>" <?php echo isset($_POST['category_id']) && $category['id'] == $_POST['category_id'] ? "selected=true" : null ?>>
+                                <?php echo $category['name'] ?>
+                            </option>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Upload ảnh (File dạng ảnh, dung lượng upload không vượt quá 2Mb)</label>
+                <input type="file" name="avatar" class="form-control">
             </div>
             <div class="form-group">
                 <label>summary</label>
-                <input type="text" class="form-control" name="summary" value=""/>
+                <input type="text" class="form-control" name="summary" value="<?php echo isset($_POST['summary'])? $_POST['summary']:''?>"/>
             </div>
             <div class="form-group">
                 <label>content</label>
-                <textarea name="content" id="content-description" cols="" rows="" class="form-control"></textarea>
+                <textarea name="content" id="content-description" class="form-control"><?php echo isset($_POST['content'])? $_POST['content']: '' ?></textarea>
             </div>
             <div class="form-group">
-                <label>comment_total</label>
-                <input type="text" class="form-control" name="comment_total" value=""/>
+                <label>Comment_total</label>
+                <input type="number" name="comment_total" value="<?php echo isset($_POST['comment_total']) ? $_POST['comment_total'] : ''; ?>"
+                       class="form-control"/>
             </div>
             <div class="form-group">
-                <label>like_total</label>
-                <input type="text" class="form-control" name="like_total" value=""/>
+                <label>Like_total</label>
+                <input type="number" name="like_total" value="<?php echo isset($_POST['like_total']) ? $_POST['like_total'] : ''; ?>"
+                       class="form-control"/>
             </div>
             <div class="form-group">
+                <?php
+                $selectedStatusEnable = '';
+                $selectedStatusDisabled = '';
+                if (isset($_POST['status'])) {
+                    switch ($_POST['status']) {
+                        case Category::STATUS_ENABLED:
+                            $selectedStatusEnable = "selected=true"; break;
+                        case Category::STATUS_DISABLED:
+                            $selectedStatusDisabled="selected=true"; break;
+                    }
+                }
+                ?>
                 <label>status</label>
                 <select name="status" class="form-control">
-                    <option value="<?php echo News::STATUS_ENABLED?>">ENABLE</option>
-                    <option value="<?php echo News::STATUS_DISABLED?>">DISABLE</option>
+                    <option <?php echo $selectedStatusEnable; ?> value="<?php echo News::STATUS_ENABLED?>">ENABLE</option>
+                    <option <?php echo $selectedStatusDisabled;  ?>value="<?php echo News::STATUS_DISABLED?>">DISABLE</option>
                 </select>
             </div>
             <div class="form-group">

@@ -1,5 +1,6 @@
 <?php
 require_once 'models/Model.php';
+//require_once 'helpers/Helper.php';
 
 class News extends Model
 {
@@ -11,11 +12,18 @@ class News extends Model
      * Truy vấn DB lấy toàn bộ news trong
      * table news
      * giả sử tên bảng của mình là news
+     * success
      */
-    public function getAll()
+    public function getAll()  //success
     {
         $connection = $this->openConnection();
-        $querySelect = "SELECT * FROM news ORDER BY created_at DESC ";
+        $querySelect = "SELECT news.*, admins.username as admin_username, categories.name as category_name FROM news
+                    LEFT JOIN admins ON admins.id = news.admin_id
+                    LEFT JOIN categories ON categories.id = news.category_id
+                    {$this->querySearch}
+                    ORDER BY news.created_at DESC
+//                    LIMIT {$this->startpoint}, {$this->per_page}";
+
         $results = mysqli_query($connection, $querySelect);
         $news = [];
         if (mysqli_num_rows($results) > 0) {
@@ -27,12 +35,17 @@ class News extends Model
         return $news;
     }
 
-    public function getNewsById($id)
+    public function getNewsById($id)  //success
     {
         // Mở kết nối
         $connection = $this->openConnection();
-        // tạo câu truy vấn lấy news theo id truyền vào và thực thi câu truy vấn này
-        $querySelect = "SELECT * FROM news where id=$id LIMIT 1"; //LIMIT 1 Giới hạn 1 giá trị
+        //do bảng news có các khóa ngoại nên cần join các bảng liên quan để lấy các thông tin cần thiết
+        $querySelect = "
+        SELECT news.*, categories.name as category_name, admins.username as admin_username FROM news
+        LEFT JOIN categories ON categories.id = news.category_id
+        LEFT JOIN admins ON admins.id = news.admin_id
+        WHERE news.id = $id";
+
         $result = mysqli_query($connection, $querySelect);
         $news = [];
         if (mysqli_num_rows($result) > 0) {
@@ -69,13 +82,17 @@ class News extends Model
      * Insert dữ liệu news
      * @param $news array mảng news
      * @return boolean TRUE nếu insert thành công, ngược lại là FALSE
+     * success
      */
-    public function insertNews($news=[])
+    public function insertNews($news = [])
     {
         // mở kết nối
         $connection = $this->openConnection();
-        $queryInsert = "INSERT INTO news(`tittle`,`summary`,`content'`,`comment_total`,`like_total`,`status`) 
+        $queryInsert = "INSERT INTO news(`title`,`category_id`,`admin_id`,`avatar`,`summary`,`content`,`comment_total`,`like_total`,`status`) 
               VALUES ('{$news['title']}',
+                    '{$news['category_id']}',
+                    '{$news['admin_id']}',
+                    '{$news['avatar']}',
                     '{$news['summary']}',
                     '{$news['content']}',
                     {$news['comment_total']},
@@ -95,6 +112,7 @@ class News extends Model
      * Xóa dữ liệu news
      * @param $id integer id news
      * @return boolean TRUE nếu delete thành công, ngược lại là FALSE
+     * success
      */
     public function deleteNews($id)
     {

@@ -1,37 +1,113 @@
-<?php require_once 'views/layouts/header.php'; ?>
-    <div id="main-container" class="container">
-        <?php if (!empty($news)): ?>
-            <h3>Thông tin bản ghi <b>#<?php echo $news['id']; ?></b></h3>
+<?php include_once 'views/layouts/header.php' ?>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                Dashboard
+                <small>Control panel</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li class="active">Dashboard</li>
+            </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <h2>Chi tiết tin tức #<?php echo $news['id']?></h2>
             <table class="table table-bordered">
                 <tr>
-                    <th>ID</th>
-                    <th>Title</th>
-                    <th>Category_id</th>
-                    <th>user_id</th>
-                    <th>summary</th>
-                    <th>content</th>
-                    <th>comment_total</th>
-                    <th>like_total</th>
-                    <th>status</th>
-                    <th>create_at</th>
+                    <td>ID</td>
+                    <td>
+                        <?php echo $news['id']; ?>
+                    </td>
                 </tr>
                 <tr>
-                    <td><?php echo $news['id']; ?></td>
-                    <td><?php echo $news['title']; ?></td>
-                    <td><?php echo $news['Category_id']; ?></td>
-                    <td><?php echo $news['user_id']; ?></td>
-                    <td><?php echo $news['summary']; ?></td>
-                    <td><?php echo $news['content']; ?></td>
-                    <td><?php echo $news['comment_total']; ?></td>
-                    <td><?php echo $news['like_total']; ?></td>
-                    <td><?php echo $news['status']; ?></td>
-                    <td><?php echo date('d-m-Y H:i:s', strtotime($news['created_at'])); ?></td>
-                    <td></td>
+                    <td>Title</td>
+                    <td>
+                        <?php echo $news['title']; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Categoy name</td>
+                    <td>
+                        <?php echo $news['category_name']; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Admin name</td>
+                    <td>
+                        <?php echo $news['admin_username']; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Avatar</td>
+                    <td>
+                        <?php if(!empty($news['avatar'])): ?>
+                            <img src="assets/uploads/<?php echo $news['avatar']?>"
+                                 width="80px" />
+                        <?php endif; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Summary</td>
+                    <td>
+                        <?php echo $news['summary']; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>
+                        <?php echo $news['content']; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Comment total</td>
+                    <td>
+                        <?php echo $news['comment_total']; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Like total</td>
+                    <td>
+                        <?php echo $news['like_total']; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>View</td>
+                    <td>
+                        <?php echo $news['view']; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>
+                        <?php
+                        $statusText = '';
+                        switch ($news['status']) {
+                            case Category::STATUS_ENABLED: $statusText = 'Active';
+                                break;
+                            case Category::STATUS_DISABLED: $statusText = 'Disabled';
+                                break;
+                        }
+                        echo $statusText;
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Created at</td>
+                    <td>
+                        <?php
+                        echo date('d-m-Y H:i:s',
+                            strtotime($news['created_at']));
+                        ?>
+                    </td>
                 </tr>
             </table>
-        <?php else: ?>
-            <h3>Không tìm thấy thông tin bản khi</h3>
-        <?php endif; ?>
-        <a href="index.php" class="btn btn-primary">Back</a>
+            <a href="index.php?controller=news&action=index" class="btn btn-primary">Back</a>
+        </section>
+        <!-- /.content -->
     </div>
-<?php require_once 'views/layouts/footer.php'; ?>
+    <!-- /.content-wrapper -->
+<?php include_once 'views/layouts/footer.php' ?>

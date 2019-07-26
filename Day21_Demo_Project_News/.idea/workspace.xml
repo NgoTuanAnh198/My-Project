@@ -3,8 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="0653c63a-d2f0-4938-a76e-b4c6d67c535a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/mvc/backend/assets/uploads/1563546208mysql-696x430.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/mvc/backend/assets/uploads/1563885966wordpress-logo.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Draft/mvc/backend/assets/uploads/1563887701client server.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/mvc/backend/assets/uploads/1563937244php-1024x538.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/mvc/backend/assets/uploads/1563937997Bách khoa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/mvc/backend/assets/uploads/1563938279tu-hoc-html-html-co-ban.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/mvc/backend/assets/uploads/15639652791475177859css.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/mvc/backend/controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Draft/mvc/backend/controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/mvc/backend/controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Draft/mvc/backend/controllers/NewsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Draft/mvc/backend/models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/Draft/mvc/backend/models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/mvc/backend/models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/Draft/mvc/backend/models/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/mvc/backend/models/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/Draft/mvc/backend/models/News.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/mvc/backend/views/news/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Draft/mvc/backend/views/news/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/mvc/backend/views/news/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/Draft/mvc/backend/views/news/detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/mvc/backend/views/news/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Draft/mvc/backend/views/news/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/mvc/backend/views/news/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/Draft/mvc/backend/views/news/update.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,10 +125,37 @@
     <session id="1491211438">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="php" value="2263" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PHP" value="2251" />
+          <entry key="SQL" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="jpg" value="1" />
+          <entry key="php" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="1" />
+          <entry key="PHP" value="17" />
         </counts>
       </usages-collector>
     </session>
@@ -122,19 +163,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/categories/detail.php">
+        <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/news/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" column="97" selection-start-line="45" selection-start-column="97" selection-end-line="45" selection-end-column="97" />
+            <state relative-caret-position="2720">
+              <caret line="160" column="13" selection-start-line="160" selection-start-column="13" selection-end-line="160" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/controllers/CategoryController.php">
+        <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/layouts/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
+            <state relative-caret-position="272">
+              <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -142,26 +183,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/categories/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+            <state relative-caret-position="221">
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/categories/update.php">
+        <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/news/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="87" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="87" />
+            <state relative-caret-position="1785">
+              <caret line="105" column="48" selection-start-line="105" selection-start-column="48" selection-end-line="105" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/controllers/NewsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/models/Category.php">
+        <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/models/News.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="62" column="90" lean-forward="true" selection-start-line="62" selection-start-column="90" selection-end-line="62" selection-end-column="90" />
+            <state relative-caret-position="-1224">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -169,17 +219,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/models/Model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+            <state relative-caret-position="1258">
+              <caret line="74" column="6" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/categories/create.php">
+        <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/news/detail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="55" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="55" />
+            <state relative-caret-position="170">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/news/create.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1071">
+              <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/models/Category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1836">
+              <caret line="108" column="52" selection-start-line="108" selection-start-column="52" selection-end-line="108" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -191,6 +259,8 @@
       <find>true</find>
       <find>return</find>
       <find>$categoriesModel = new Category();</find>
+      <find>newsMo</find>
+      <find>getpa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -203,22 +273,14 @@
         <option value="$PROJECT_DIR$/Draft/mvc/frontend/index.php" />
         <option value="$PROJECT_DIR$/Draft/mvc/backend/configs/database.php" />
         <option value="$PROJECT_DIR$/Draft/mvc/frontend/controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/Draft/mvc/backend/views/news/detail.php" />
         <option value="$PROJECT_DIR$/Draft/mvc/backend/views/categorys/detail_category.php" />
         <option value="$PROJECT_DIR$/Draft/mvc/backend/views/categorys/create_category.php" />
-        <option value="$PROJECT_DIR$/Draft/mvc/backend/views/news/update.php" />
         <option value="$PROJECT_DIR$/Draft/mvc/backend/views/categorys/update_category.php" />
         <option value="$PROJECT_DIR$/Draft/mvc/backend/views/categorys/show_categories.php" />
         <option value="$PROJECT_DIR$/Draft/mvc/backend/views/layouts/footer.php" />
-        <option value="$PROJECT_DIR$/Draft/mvc/backend/views/news/index.php" />
         <option value="$PROJECT_DIR$/Draft/mvc/backend/controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/Draft/mvc/backend/models/News.php" />
-        <option value="$PROJECT_DIR$/Draft/mvc/backend/controllers/NewsController.php" />
-        <option value="$PROJECT_DIR$/Draft/mvc/backend/views/news/create.php" />
         <option value="$PROJECT_DIR$/Draft/mvc/backend/assets/js/main.js" />
         <option value="$PROJECT_DIR$/Draft/mvc/backend/assets/ckfinder/config.php" />
-        <option value="$PROJECT_DIR$/Draft/mvc/backend/views/categories/create.php" />
-        <option value="$PROJECT_DIR$/Draft/mvc/backend/models/Model.php" />
         <option value="$PROJECT_DIR$/Draft/mvc/backend/views/user/update.php" />
         <option value="$PROJECT_DIR$/Draft/mvc/backend/models/User.php" />
         <option value="$PROJECT_DIR$/Draft/mvc/backend/controllers/UserController.php" />
@@ -229,6 +291,14 @@
         <option value="$PROJECT_DIR$/Draft/mvc/backend/views/categories/index.php" />
         <option value="$PROJECT_DIR$/Draft/mvc/backend/controllers/CategoryController.php" />
         <option value="$PROJECT_DIR$/Draft/mvc/backend/models/Category.php" />
+        <option value="$PROJECT_DIR$/Draft/mvc/backend/views/categories/create.php" />
+        <option value="$PROJECT_DIR$/Draft/mvc/backend/views/news/create.php" />
+        <option value="$PROJECT_DIR$/Draft/mvc/backend/views/news/detail.php" />
+        <option value="$PROJECT_DIR$/Draft/mvc/backend/views/news/update.php" />
+        <option value="$PROJECT_DIR$/Draft/mvc/backend/models/News.php" />
+        <option value="$PROJECT_DIR$/Draft/mvc/backend/models/Model.php" />
+        <option value="$PROJECT_DIR$/Draft/mvc/backend/views/news/index.php" />
+        <option value="$PROJECT_DIR$/Draft/mvc/backend/controllers/NewsController.php" />
       </list>
     </option>
   </component>
@@ -239,9 +309,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="x" value="624" />
+    <option name="y" value="10" />
+    <option name="width" value="753" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -250,6 +320,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,7 +352,7 @@
               <item name="Draft" type="462c0819:PsiDirectoryNode" />
               <item name="mvc" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Day21_Demo_Project_News" type="b2602c69:ProjectViewProjectNode" />
@@ -289,13 +360,38 @@
               <item name="Draft" type="462c0819:PsiDirectoryNode" />
               <item name="mvc" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Day21_Demo_Project_News" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Day21_Demo_Project_News" type="462c0819:PsiDirectoryNode" />
+              <item name="Draft" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Day21_Demo_Project_News" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Day21_Demo_Project_News" type="462c0819:PsiDirectoryNode" />
+              <item name="Draft" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Day21_Demo_Project_News" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Day21_Demo_Project_News" type="462c0819:PsiDirectoryNode" />
+              <item name="Draft" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -358,16 +454,20 @@
       <workItem from="1563951271020" duration="320000" />
       <workItem from="1563953332201" duration="183000" />
       <workItem from="1563965165769" duration="417000" />
+      <workItem from="1564020889905" duration="2839000" />
+      <workItem from="1564042887547" duration="6148000" />
+      <workItem from="1564110970553" duration="11571000" />
+      <workItem from="1564135165697" duration="131000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86449000" />
+    <option name="totallyTimeSpent" value="107138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21558245" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26399395" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -387,6 +487,27 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2602118" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294509" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3295082" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -473,34 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/news/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="61" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/news/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/news/detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/news/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="40" column="64" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/users/update.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -521,20 +614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/controllers/NewsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="96" column="38" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/models/News.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -560,15 +639,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../project-tot-nghiep-master/backend/views/sanpham/Doansang/update.php" />
-    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/layouts/header.php">
+    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/assets/uploads/1563937244php-1024x538.png" />
+    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/assets/uploads/15639652791475177859css.jpg" />
+    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/categories/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+        <state relative-caret-position="544">
+          <caret line="32" column="87" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="87" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/assets/uploads/1563937244php-1024x538.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/categories/detail.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -577,45 +655,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/categories/index.php">
+    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/controllers/CategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/categories/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="87" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="87" />
+        <state relative-caret-position="578">
+          <caret line="161" column="36" selection-start-line="161" selection-start-column="36" selection-end-line="161" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/categories/create.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="55" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="55" />
+        <state relative-caret-position="272">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/news/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2720">
+          <caret line="160" column="13" selection-start-line="160" selection-start-column="13" selection-end-line="160" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/layouts/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/categories/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/news/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="105" column="48" selection-start-line="105" selection-start-column="48" selection-end-line="105" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/controllers/NewsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/models/Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        <state relative-caret-position="1258">
+          <caret line="74" column="6" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/controllers/CategoryController.php">
+    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/news/detail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
+        <state relative-caret-position="170">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/views/news/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/models/Category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="62" column="90" lean-forward="true" selection-start-line="62" selection-start-column="90" selection-end-line="62" selection-end-column="90" />
+        <state relative-caret-position="1836">
+          <caret line="108" column="52" selection-start-line="108" selection-start-column="52" selection-end-line="108" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Draft/mvc/backend/models/News.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1224">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>

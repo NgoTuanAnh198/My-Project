@@ -215,17 +215,23 @@ class CategoryController extends Controller
         if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
             //khai báo session hiển thị lỗi, được hiển thị tại file views/layouts/header.php
             $_SESSION['error'] = 'Tham số không hợp lệ';
-            //hàm chuyển hướng bên dưới không cần truyền vào controller và action
-            //thì mặc định sẽ có controller=book và action=show
-            //theo như cách đã code trong file gốc index.php của ứng dụng
             header("Location: index.php");
             //cần có lệnh exit sau lệnh header, để tránh lỗi ko chuyển hướng được
             exit();
         }
         $categoriesModel = new Category();
         $id = $_GET['id'];
+        $categories = $categoriesModel->getCategoriesById($id);
         $isDelete = $categoriesModel->deleteCategories($id);
-        if ($isDelete) {
+        $avatar = $categories['avatar'];
+        // khai báo thư mục có tên uploads, nằm trong thư mục asset
+        $absolutePathUpload =__DIR__.'/../assets/uploads';
+
+        //thực hiện delete ảnh cũ
+        if (!empty($avatar)){
+            @unlink($absolutePathUpload.'/'.$avatar);
+        }
+        else if ($isDelete) {
             $_SESSION['success'] = "Xóa bản ghi $id thành công";
         } else {
             $_SESSION['error'] = "Xóa bản ghi $id thất bại";

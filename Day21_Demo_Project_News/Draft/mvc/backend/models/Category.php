@@ -105,6 +105,8 @@ class Category extends Model
         $connection = $this->openConnection();
         $queryDelete = "DELETE FROM categories WHERE id = $id";
         $isDelete = mysqli_query($connection, $queryDelete);
+        $queryDeleteNews = "DELETE FROM news WHERE category_id = $id";
+        mysqli_query($connection, $queryDeleteNews);
         //đóng kết nối
         mysqli_close($connection);
         if ($isDelete) {
