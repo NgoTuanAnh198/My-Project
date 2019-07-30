@@ -1,0 +1,41 @@
+ul.pagination {
+  text-align:center;
+  color:#829994;
+}
+ul.pagination li {
+  display:inline;
+  padding:0 3px;
+}
+ul.pagination a {
+  color:#0d7963;
+  display:inline-block;
+  padding:5px 10px;
+  border:1px solid #cde0dc;
+  text-decoration:none;
+}
+ul.pagination a:hover,
+ul.pagination a.current {
+  background:#0d7963;
+  color:#fff;
+}
+ul.pagination .page_info{
+  margin-top: 6px;
+  display: inline-block;
+  padding-left: 10px;
+}
+.form-login {
+  max-width: 300px;
+  margin: 20px auto;
+}
+.center-align{
+  text-align: center;
+}
+
+.payment-status {
+  background: blue;
+  padding: 3px 10px;
+  font-size: 11px;
+  color: #fff;
+  vertical-align: middle;
+  margin-left: 3px;
+}

@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#trang chi tiết tin tức
+RewriteRule tin-tuc/(.*)/([0-9]+) index.php?controller=news&action=detail&id=$2 [QSA]
+#trang chi tiết sản phẩm
+RewriteRule san-pham/(.*)/([0-9]+) index.php?controller=product&action=detail&id=$2 [QSA]
+#trang thêm sản phẩm vào giỏ hàng
+RewriteRule them-gio-hang/([0-9]+) index.php?controller=cart&action=add&id=$1 [QSA]
+#trang liệt kê sản phẩm đang có trong giỏ hàng
+RewriteRule gio-hang-cua-ban$ index.php?controller=cart&action=index
+#xóa sản phẩm đang có trong giỏ hàng
+RewriteRule xoa-san-pham/([0-9]+) index.php?controller=cart&action=delete&id=$1
+#trang thanh toán
+RewriteRule thanh-toan index.php?controller=payment&action=index
